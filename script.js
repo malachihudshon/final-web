@@ -19,24 +19,23 @@ function displayIm(){
   blacko()
 }
 
+
+b1 =document.getElementById("yel")
+b2 =document.getElementById("yell")
+
 function black(el){
  if(document.canvas.src.match("imagesoferic/eric.jpg") ){
-
-   document.getElementById("yel").classList.add("opaque");
-   document.getElementById("yell").classList.add("opaque");	
+  b1.classList.add("opaque");
+  b2.classList.add("opaque");	
    e.play()
 } else {
-
-		
-
 }
-
 }
 function blacko(el){
  if(document.canvas.src.match("imagesoferic/eric.jpg") ){
-	 document.getElementById("yel").classList.add("imgo");
+	b1.classList.add("imgo");
 	 setTimeout(function () {
-	 document.getElementById("yell").classList.add("opaque");
+	 b2.classList.add("opaque");
 	 document.getElementById("yelp").classList.add("opaque");
 	 document.getElementById("yely").classList.add("opaque");
 		}, 4000);
